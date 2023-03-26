@@ -73,6 +73,11 @@ font-family: 'Poppins', sans-serif;
 
 .nav-list__link {
 color: var(--header-text);
+transition: opacity 0.2s ease-in;
+}
+
+.nav-list__link:hover {
+    opacity: 0.8;
 }
 
 .nav-list__link--active {
@@ -97,6 +102,10 @@ color: var(--header-text);
     min-height: 695px;
     padding: 40px 0;
     background-color: var(--dark-bg);
+    background-image: url(./../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
     color: var(--header-text);
     display: flex;
     justify-content: center;
