@@ -282,6 +282,10 @@ transition: opacity 0.2s ease-in;
     margin: 0 auto;
 }
 
+.content-list a {
+    color: var(--accent);
+}
+
 .content-list__item p + p {
     margin-top: 0.5em;
     font-size: 18px;
@@ -291,6 +295,7 @@ transition: opacity 0.2s ease-in;
 /* footer*/
 
 .footer {
+    margin-top: auto;
     background-color: var(--dark-bg);
     padding: 60px 0 50px;
     color: var(--white);
