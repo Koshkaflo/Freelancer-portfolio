@@ -86,6 +86,8 @@ html, body {
 
 .nav-list {
 display: flex;
+flex-wrap: wrap;
+row-gap: 10px;
 align-items: center;
 column-gap: 40px;
 font-size: 16px;
@@ -221,6 +223,7 @@ transition: opacity 0.2s ease-in;
 .projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: 30px;
     row-gap: 30px;
 }
@@ -316,4 +319,49 @@ transition: opacity 0.2s ease-in;
 
 .copyright p + p {
     margin-top: 1.5em;
+}
+
+@media (max-width: 620px) {
+    .header {
+        min-height: unset;
+    }
+    .header__title {
+        font-size: 30px;
+    }
+    .header__title strong {
+        font-size: 40px;
+    }
+    .section {
+        padding: 40px 0;
+    }
+    .title-1 {
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+    .project__title {
+        font-size: 22px;
+    }
+    .footer {
+        padding: 40px 0 30px;
+    }
+    .social__item {
+        width: 28px;
+    }
+    .social {
+        column-gap: 20px;
+    }
+    .footer__wrapper {
+        row-gap: 20px;
+    }
+    .title-2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .content-list {
+        row-gap: 20px;
+    }
+    .project-details__desc {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
 }
