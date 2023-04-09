@@ -17,13 +17,25 @@ font-family: 'Poppins', sans-serif;
     --header-text: var(--white);
     --accent: var(--violet);
     --black-text: var(--black);
+
+
+    /* light mode */
+
+    --page-bg:var(--white);
+    --text-color: var(--black);
 }
 
+.dark {
+    /*dark mode */
+    --page-bg:var(--black);
+    --text-color: var(--white);
+}
 
 html, body {
     font-family: 'DM Sans', sans-serif;
     letter-spacing: -0.5px;
-    color: var(--black-text);
+    background-color: var(--page-bg);
+    color: var(--text-color);
 }
 
 /*general*/
