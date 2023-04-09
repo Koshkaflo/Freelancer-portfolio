@@ -67,7 +67,7 @@ html, body {
 
 .nav-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     column-gap: 30px;
     row-gap: 20px;
@@ -75,6 +75,7 @@ html, body {
 }
 
 .logo {
+    margin-right: auto;
     color: var(--header-text);
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
@@ -124,6 +125,7 @@ transition: opacity 0.2s ease-in;
 /* dark-mode btn */
 
 .dark-mode-btn {
+    order: 9;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -365,6 +367,12 @@ transition: opacity 0.2s ease-in;
     }
     .header__title strong {
         font-size: 40px;
+    }
+    .nav-row {
+        justify-content: space-between;
+    }
+    .dark-mode-btn {
+        order: 0;
     }
     .section {
         padding: 40px 0;
